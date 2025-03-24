@@ -41,3 +41,49 @@ let tienda2 = new nuevaTienda("White Tower", "Tar Valon", 100, [
   { item: "Spells", material: "Varied" },
 ]);
 console.log(tienda2);
+
+console.log("\n")
+let num = -4;
+
+console.log("El numero", num, "es");
+if(num>0){
+  console.log("Positivo");
+  if(num%2==0){
+    console.log("Y es Par");
+  }
+  else if(num%2!=0){
+    console.log("Y es Impar");
+  }
+}
+else if(num<0){
+  console.log("Negativo");
+  if(num%2==0){
+    console.log("Y es Par");
+  }
+  else if(num%2!=0){
+    console.log("Y es Impar");
+  }
+}
+else if(num==0){
+  console.log("Cero");
+  if(num%2==0){
+    console.log("Y es Par");
+  }
+  else if(num%2!=0){
+    console.log("Y es Impar");
+  }
+}
+console.log("\n")
+
+let num3 = 5;
+let mensaje = num3 >= 0 ? "Positivo" : "Negativo";
+console.log("El numero", num3, "es", mensaje);
+
+console.log("\n")
+
+function mostrarProductos(tienda){
+  for (let productos of tienda.productos){
+    console.log(productos);
+  }
+}
+mostrarProductos(tienda);
